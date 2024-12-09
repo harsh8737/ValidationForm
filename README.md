@@ -1,7 +1,9 @@
 #Validation Form Formik React App
+
 This project is a simple React application built with TypeScript. It includes two forms: Sign Up and Login, demonstrating clean coding principles, accessibility features, and good user experience (UX) practices. The project uses Formik for form handling and validation and Yup for schema-based validation.
 
 #Features
+
 ##Sign Up Form:
 
 Validates user input with meaningful error messages.
@@ -34,21 +36,26 @@ src/
 #Design Choices
 
 ##Formik and Yup:
+
 Formik simplifies form state management, while Yup provides a robust validation mechanism.
 
 ##Accessibility:
+
 Proper aria-required attributes and labels are added to improve usability for screen readers.
 
 ##Local Storage:
+
 The "Remember Me" feature persists the user's email securely in local storage.
 
 ##CSS Design:
+
 A lightweight and responsive CSS is used to avoid unnecessary dependencies.
 
 
 Here’s a comprehensive README.md file for your project:
 
-Formik React App
+##Formik React App
+
 This project is a simple React application built with TypeScript. It includes two forms: Sign Up and Login, demonstrating clean coding principles, accessibility features, and good user experience (UX) practices. The project uses Formik for form handling and validation and Yup for schema-based validation.
 
 Features
@@ -91,9 +98,8 @@ Copy code
 npm start
 Open http://localhost:3000 in your browser to view the app.
 
-File Structure
-plaintext
-Copy code
+#File Structure
+
 src/
 ├── components/
 │   ├── LoginForm.tsx         # Login form component
@@ -103,8 +109,11 @@ src/
 ├── App.tsx                   # Main component to toggle forms
 ├── index.tsx                 # Entry point of the app
 ├── styles.css                # Custom styles
-Design Choices
-Formik and Yup:
+
+
+#Design Choices
+
+##Formik and Yup:
 
 Formik simplifies form state management, while Yup provides a robust validation mechanism.
 
@@ -117,11 +126,13 @@ Proper aria-required attributes and labels are added to improve usability for sc
 The "Remember Me" feature persists the user's email securely in local storage.
 
 ##CSS Design:
+
 A lightweight and responsive CSS is used to avoid unnecessary dependencies.
 
 #Assumptions & Limitations
 
 ##Email Validation:
+
 The email validation checks for a valid format (e.g., example@domain.com) but does not verify the domain or existence.
 
 ##Password Strength Indicator:
