@@ -1,50 +1,131 @@
-# React + TypeScript + Vite
+#Validation Form Formik React App
+This project is a simple React application built with TypeScript. It includes two forms: Sign Up and Login, demonstrating clean coding principles, accessibility features, and good user experience (UX) practices. The project uses Formik for form handling and validation and Yup for schema-based validation.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+#Features
+##Sign Up Form:
 
-Currently, two official plugins are available:
+Validates user input with meaningful error messages.
+Ensures password confirmation matches the password.
+Includes ARIA roles and labels for accessibility.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##Login Form:
 
-## Expanding the ESLint configuration
+"Remember Me" checkbox to save email to local storage.
+Displays success messages on successful submission.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+##Common Features:
 
-- Configure the top-level `parserOptions` property like this:
+Clean architecture and separation of concerns.
+Simple, responsive design with plain CSS.
+Accessibility-friendly with proper ARIA roles.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+#File Structure
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+src/
+├── components/
+│   ├── LoginForm.tsx        
+│   ├── SignUpForm.tsx       
+├── utils/
+│   ├── validations.ts      
+├── App.tsx                 
+├── index.tsx              
+├── styles.css              
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+#Design Choices
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+##Formik and Yup:
+Formik simplifies form state management, while Yup provides a robust validation mechanism.
+
+##Accessibility:
+Proper aria-required attributes and labels are added to improve usability for screen readers.
+
+##Local Storage:
+The "Remember Me" feature persists the user's email securely in local storage.
+
+##CSS Design:
+A lightweight and responsive CSS is used to avoid unnecessary dependencies.
+
+
+Here’s a comprehensive README.md file for your project:
+
+Formik React App
+This project is a simple React application built with TypeScript. It includes two forms: Sign Up and Login, demonstrating clean coding principles, accessibility features, and good user experience (UX) practices. The project uses Formik for form handling and validation and Yup for schema-based validation.
+
+Features
+Sign Up Form:
+
+Validates user input with meaningful error messages.
+Ensures password confirmation matches the password.
+Includes ARIA roles and labels for accessibility.
+Login Form:
+
+"Remember Me" checkbox to save email to local storage.
+Displays success messages on successful submission.
+Common Features:
+
+Clean architecture and separation of concerns.
+Simple, responsive design with plain CSS.
+Accessibility-friendly with proper ARIA roles.
+Getting Started
+Follow these steps to run the project locally:
+
+Prerequisites
+Node.js (v14 or later)
+npm or yarn
+Installation
+Clone the repository:
+
+bash
+Copy code
+git clone https://github.com/your-username/formik-react-app.git
+cd formik-react-app
+Install dependencies:
+
+bash
+Copy code
+npm install
+Start the development server:
+
+bash
+Copy code
+npm start
+Open http://localhost:3000 in your browser to view the app.
+
+File Structure
+plaintext
+Copy code
+src/
+├── components/
+│   ├── LoginForm.tsx         # Login form component
+│   ├── SignUpForm.tsx        # Sign-up form component
+├── utils/
+│   ├── validations.ts        # (Optional) Validation schemas for forms
+├── App.tsx                   # Main component to toggle forms
+├── index.tsx                 # Entry point of the app
+├── styles.css                # Custom styles
+Design Choices
+Formik and Yup:
+
+Formik simplifies form state management, while Yup provides a robust validation mechanism.
+
+##Accessibility:
+
+Proper aria-required attributes and labels are added to improve usability for screen readers.
+
+##Local Storage:
+
+The "Remember Me" feature persists the user's email securely in local storage.
+
+##CSS Design:
+A lightweight and responsive CSS is used to avoid unnecessary dependencies.
+
+#Assumptions & Limitations
+
+##Email Validation:
+The email validation checks for a valid format (e.g., example@domain.com) but does not verify the domain or existence.
+
+##Password Strength Indicator:
+Not implemented in this version.
+
+##No Third-Party UI Libraries:
+Only plain CSS is used for styling to meet project constraints
