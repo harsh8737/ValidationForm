@@ -1,6 +1,4 @@
-/* SignUpForm.css */
 
-/* General styling for the form */
 form {
     width: 100%;
     max-width: 400px;
@@ -12,7 +10,7 @@ form {
     font-family: Arial, sans-serif;
   }
   
-  /* Label styling */
+
   label {
     display: block;
     font-size: 14px;
@@ -20,7 +18,7 @@ form {
     margin-bottom: 8px;
   }
   
-  /* Input fields */
+
   input[type="email"],
   input[type="password"] {
     width: 100%;
@@ -39,7 +37,7 @@ form {
     outline: none;
   }
   
-  /* Error messages */
+
   .error {
     color: #e74c3c;
     font-size: 12px;
@@ -47,7 +45,7 @@ form {
     margin-bottom: 10px;
   }
   
-  /* Button styling */
+
   button {
     display: inline-block;
     width: 100%;
