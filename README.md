@@ -1,27 +1,27 @@
-#Validation Form Formik React App
+# Validation Form Formik React App
 
 This project is a simple React application built with TypeScript. It includes two forms: Sign Up and Login, demonstrating clean coding principles, accessibility features, and good user experience (UX) practices. The project uses Formik for form handling and validation and Yup for schema-based validation.
 
-#Features
+# Features
 
-##Sign Up Form:
+## Sign Up Form:
 
 Validates user input with meaningful error messages.
 Ensures password confirmation matches the password.
 Includes ARIA roles and labels for accessibility.
 
-##Login Form:
+## Login Form:
 
 "Remember Me" checkbox to save email to local storage.
 Displays success messages on successful submission.
 
-##Common Features:
+## Common Features:
 
 Clean architecture and separation of concerns.
 Simple, responsive design with plain CSS.
 Accessibility-friendly with proper ARIA roles.
 
-#File Structure
+# File Structure
 
 src/
 ├── components/
@@ -33,32 +33,32 @@ src/
 ├── index.tsx              
 ├── styles.css              
 
-#Design Choices
+# Design Choices
 
-##Formik and Yup:
+## Formik and Yup:
 
 Formik simplifies form state management, while Yup provides a robust validation mechanism.
 
-##Accessibility:
+## Accessibility:
 
 Proper aria-required attributes and labels are added to improve usability for screen readers.
 
-##Local Storage:
+## Local Storage:
 
 The "Remember Me" feature persists the user's email securely in local storage.
 
-##CSS Design:
+## CSS Design:
 
 A lightweight and responsive CSS is used to avoid unnecessary dependencies.
 
 
 Here’s a comprehensive README.md file for your project:
 
-##Formik React App
+## Formik React App
 
 This project is a simple React application built with TypeScript. It includes two forms: Sign Up and Login, demonstrating clean coding principles, accessibility features, and good user experience (UX) practices. The project uses Formik for form handling and validation and Yup for schema-based validation.
 
-Features
+## Features
 Sign Up Form:
 
 Validates user input with meaningful error messages.
@@ -98,7 +98,7 @@ Copy code
 npm start
 Open http://localhost:3000 in your browser to view the app.
 
-#File Structure
+# File Structure
 
 src/
 ├── components/
@@ -111,13 +111,13 @@ src/
 ├── styles.css                # Custom styles
 
 
-#Design Choices
+# Design Choices
 
-##Formik and Yup:
+## Formik and Yup:
 
 Formik simplifies form state management, while Yup provides a robust validation mechanism.
 
-##Accessibility:
+## Accessibility:
 
 Proper aria-required attributes and labels are added to improve usability for screen readers.
 
@@ -125,18 +125,18 @@ Proper aria-required attributes and labels are added to improve usability for sc
 
 The "Remember Me" feature persists the user's email securely in local storage.
 
-##CSS Design:
+## CSS Design:
 
 A lightweight and responsive CSS is used to avoid unnecessary dependencies.
 
-#Assumptions & Limitations
+# Assumptions & Limitations
 
-##Email Validation:
+## Email Validation:
 
 The email validation checks for a valid format (e.g., example@domain.com) but does not verify the domain or existence.
 
-##Password Strength Indicator:
+## Password Strength Indicator:
 Not implemented in this version.
 
-##No Third-Party UI Libraries:
+## No Third-Party UI Libraries:
 Only plain CSS is used for styling to meet project constraints
